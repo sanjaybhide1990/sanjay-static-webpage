@@ -1,10 +1,10 @@
 name: This is a test pipeline
-on: 
-   schedule: 
+on:
+  schedule:
     - cron: "*/1 * * * *"
-jobs: 
-    Test-job: 
-        runs-on: ubuntu-latest
-        steps: 
-            -   name: Testing scheduling jobs
-                run: echo "Welcome to using Github Actions"
+jobs:
+  Test-job:
+    runs-on: self-hosted
+    steps:
+      - name: Testing scheduling jobs
+        run: echo "Welcome to using Github Actions"
